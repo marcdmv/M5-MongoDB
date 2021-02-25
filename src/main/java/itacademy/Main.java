@@ -9,7 +9,9 @@ import org.bson.Document;
 
 public class Main {
 
-    MongoClient mongoClient = MongoClients.create();
-    MongoDatabase db = mongoClient.getDatabase("nueva");
-    MongoCollection <Document> coleccion = db.getCollection("profes");
+    public static void main(String[] args) {
+        MongoClient mongoClient = MongoClients.create();
+        MongoDatabase db = mongoClient.getDatabase("nueva");
+        MongoCollection<Document> coleccion = db.getCollection("profes");
+    }
 }
